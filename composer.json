@@ -9,13 +9,21 @@
         }
     ],
     "minimum-stability": "dev",
+    "prefer-stable": true,
     "require": {
-      "netglue/createsend-api" : "dev-master"
+      "netglue/createsend-api" : "dev-master",
+      "zendframework/zendframework": "~2.3"
     },
     "repositories": [
         {
             "type": "vcs",
             "url": "git@github.com:netglue/createsend.git"
         }
+    ],
+    "psr-0": {
+      "NetglueCreateSend\\": ["src/", "test/"]
+    },
+    "classmap": [
+      "./"
     ]
 }
