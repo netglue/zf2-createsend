@@ -1,0 +1,21 @@
+{
+    "name": "netglue/zf2-createsend",
+    "description": "ZF2 module that exposes an unofficial Guzzle based api client for Campaign Monitor",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "George Steel",
+            "email": "george@net-glue.co.uk"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+      "netglue/createsend-api" : "dev-master"
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "git@github.com:netglue/createsend.git"
+        }
+    ]
+}
