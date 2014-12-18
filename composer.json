@@ -20,10 +20,9 @@
             "url": "git@github.com:netglue/createsend.git"
         }
     ],
-    "psr-0": {
-      "NetglueCreateSend": "src/"
-    },
-    "classmap": [
-      "./"
-    ]
+    "autoload" : {
+        "psr-0" : {
+            "NetglueCreateSend" : "src/"
+        }
+    }
 }

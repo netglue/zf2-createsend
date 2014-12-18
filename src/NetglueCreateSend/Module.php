@@ -21,32 +21,6 @@ use Zend\ModuleManager\Feature\ConfigProviderInterface;
 use Zend\ModuleManager\Feature\ServiceProviderInterface;
 
 /**
- * Controller Provider
- */
-use Zend\ModuleManager\Feature\ControllerProviderInterface;
-
-/**
- * Controller Plugin Provider
- */
-use Zend\ModuleManager\Feature\ControllerPluginProviderInterface;
-
-/**
- * View Helper Provider
- */
-use Zend\ModuleManager\Feature\ViewHelperProviderInterface;
-
-/**
- * Form Element Provider
- */
-use Zend\ModuleManager\Feature\FormElementProviderInterface;
-
-/**
- * Bootstrap Listener
- */
-use Zend\ModuleManager\Feature\BootstrapListenerInterface;
-use Zend\EventManager\EventInterface;
-
-/**
  * @codeCoverageIgnore
  */
 class Module implements
