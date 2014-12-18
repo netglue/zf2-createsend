@@ -4,7 +4,7 @@ namespace NetglueCreateSend\Service;
 
 use Zend\ServiceManager\FactoryInterface;
 use Zend\ServiceManager\ServiceLocatorInterface;
-use NetglueCreateSend\Client\CreateSendClient;
+use NetglueCreateSendApi\Client\CreateSendClient;
 
 class CreateSendClientFactory implements FactoryInterface
 {

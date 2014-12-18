@@ -89,10 +89,10 @@ class Module implements
     {
         return array(
             'factories' => array(
-                'NetglueCreateSend\Client\CreateSendClient' => 'NetglueCreateSend\Service\CreateSendClientFactory',
+                'NetglueCreateSendApi\Client\CreateSendClient' => 'NetglueCreateSend\Service\CreateSendClientFactory',
             ),
             'aliases' => array(
-                'CreateSendClient' => 'NetglueCreateSend\Client\CreateSendClient',
+                'CreateSendClient' => 'NetglueCreateSendApi\Client\CreateSendClient',
             ),
         );
     }
