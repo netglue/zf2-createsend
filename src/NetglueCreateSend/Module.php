@@ -63,7 +63,8 @@ class Module implements
     {
         return array(
             'factories' => array(
-                'NetglueCreateSendApi\Client\CreateSendClient' => 'NetglueCreateSend\Service\CreateSendClientFactory',
+                'NetglueCreateSendApi\Client\CreateSendClient'  => 'NetglueCreateSend\Factory\CreateSendClientFactory',
+                'NetglueCreateSend\Service\SubscriptionService' => 'NetglueCreateSend\Factory\SubscriptionServiceFactory',
             ),
             'aliases' => array(
                 'CreateSendClient' => 'NetglueCreateSendApi\Client\CreateSendClient',

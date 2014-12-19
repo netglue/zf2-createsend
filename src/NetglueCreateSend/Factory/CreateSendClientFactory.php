@@ -1,6 +1,6 @@
 <?php
 
-namespace NetglueCreateSend\Service;
+namespace NetglueCreateSend\Factory;
 
 use Zend\ServiceManager\FactoryInterface;
 use Zend\ServiceManager\ServiceLocatorInterface;
