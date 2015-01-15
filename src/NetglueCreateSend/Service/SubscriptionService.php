@@ -21,6 +21,11 @@ class SubscriptionService implements
     private $client;
 
     /**
+     * @var ApiException\ExceptionInterface|null the last API exception if any
+     */
+    private $exception;
+
+    /**
      * @param CreateSendClient $client
      * @return void
      */
@@ -75,10 +80,19 @@ class SubscriptionService implements
                     break;
             }
             $this->getEventManager()->trigger(__FUNCTION__ . '.' . $event, $this, $data);
-
+            $this->exception = $e;
             return false;
         }
 
+    }
+
+    /**
+     * Return the most recent API Exception if one has occurred
+     * @return ApiException\ExceptionInterface|null
+     */
+    public function getException()
+    {
+        return $this->exception;
     }
 
 
